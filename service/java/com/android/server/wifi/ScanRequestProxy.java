@@ -216,7 +216,7 @@ public class ScanRequestProxy {
 
         @Override
         public void onFailure(int reason, String description) {
-            Log.e(TAG, "Scan failure received. reason: " + reason + ",description: " + description);
+            Log.d(TAG, "Scan failure received. reason: " + reason + ",description: " + description);
             sendScanResultBroadcast(false);
         }
 
